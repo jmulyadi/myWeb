@@ -28,7 +28,7 @@ export function Slidey() {
       imageLink: "../../Project_Pics/chibi.jpg",
       title: "Meme Generator",
       page: "/Meme",
-      videoLink: "https://youtu.be/3NQXit04PWo",
+      videoLink: "https://youtube.com/embed/3NQXit04PWo?si=nDSC7mfAvuBUTpZI",
       des: "With a strong focus on mastering React, I eagerly embraced this opportunity to enhance my expertise in building responsive and user-friendly web applications. This meme generator is the culmination of the skills I have gathered throughout my React journey. Here is a link to the website: https://memegenerator-josh.netlify.app/",
     },
     {
