@@ -12,7 +12,7 @@ export function Gallery() {
       videoLink: "https://youtu.be/K36kTx885dA?si=XtIBUYsI4-ssgXJ6",
     },
     {
-      imageLink: "../../public/Project_Pics/Robot.png",
+      imageLink: "../../Project_Pics/Robot.png",
       title: "Autonomous Robot",
       page: "/Robot",
       videoLink: "https://youtu.be/AoXNkOP0DM8?si=8SYTCBeKjVJKn4CB",

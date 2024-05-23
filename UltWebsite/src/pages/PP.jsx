@@ -40,7 +40,7 @@ const data = [
     title: "Meme Generator",
     page: "/Meme",
     videoLink: "",
-    des: "With a strong focus on mastering React, I eagerly embraced this opportunity to enhance my expertise in building responsive and user-friendly web applications. This meme generator is the culmination of the skills I have gathered throughout my React journey.",
+    des: "With a strong focus on mastering React, I eagerly embraced this opportunity to enhance my expertise in building responsive and user-friendly web applications. This meme generator is the culmination of the skills I have gathered throughout my React journey. Here is a link to the website: https://memegenerator-josh.netlify.app/",
   },
   {
     imageLink: "../../Project_Pics/Indo_Graph.png",

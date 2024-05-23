@@ -15,7 +15,7 @@ export function ProfileCard() {
     <div className="flex justify-center" id="home">
       <Card className="w-96">
         <CardHeader floated={false} className="h-80">
-          <img src="../../public/ProPic.jpg" alt="profile-picture" />
+          <img src="../../ProPic.jpg" alt="profile-picture" />
         </CardHeader>
         <CardBody className="text-center">
           <Typography variant="h4" color="blue-gray" className="mb-2">

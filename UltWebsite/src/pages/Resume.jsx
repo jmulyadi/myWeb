@@ -22,11 +22,7 @@ export function Resume() {
     <motion.div>
       <Card className="w-96 h-100">
         <CardHeader shadow={false} floated={false} className="h-80">
-          <img
-            src="../../public/res.jpg"
-            alt="card-image"
-            className="h-l w-full "
-          />
+          <img src="../../res.jpg" alt="card-image" className="h-l w-full " />
         </CardHeader>
         <CardBody>
           <div className="mb-2 flex items-center justify-between">
