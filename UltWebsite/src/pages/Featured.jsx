@@ -11,7 +11,7 @@ export function Slidey() {
       des: "Developed a comprehensive social media platform using React, Node.js, Express.js, MySQL, and Axios. Highlights include seamless user interactions such as registration, login, profile creation, post management, commenting, and liking. Leveraged React's modular architecture for scalability and Netlify for seamless deployment. This project demonstrates proficiency in both frontend and backend development, showcasing a passion for creating impactful digital experiences.",
     },
     {
-      imageLink: "../../public/Project_Pics/Robot.png",
+      imageLink: "../../Project_Pics/Robot.png",
       title: "Autonomous Robot",
       page: "/Robot",
       videoLink: "https://youtube.com/embed/AoXNkOP0DM8?si=8SYTCBeKjVJKn4CB",
@@ -97,11 +97,11 @@ export function Slidey() {
   };
   return (
     <div className="relative">
-      <div className="flex justify-center items-center mb-4">
+      <div className="flex justify-center items-center mb-4 ">
         <button
           onClick={handlePrev}
           disabled={currentIndex === 0}
-          className="absolute left-0 p-2 bg-gray-700 text-white rounded"
+          className=" p-2 bg-gray-700 text-white rounded top-1/2 transform -translate-y-1/2"
         >
           <div className="">{"<"}</div>
         </button>
@@ -130,7 +130,7 @@ export function Slidey() {
         <button
           onClick={handleNext}
           disabled={currentIndex >= data2.length - 5}
-          className="absolute right-0 p-2 bg-gray-700 text-white rounded"
+          className="p-2 bg-gray-700 text-white rounded top-1/2 transform -translate-y-1/2"
         >
           <div className="">{">"}</div>
         </button>

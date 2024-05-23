@@ -128,7 +128,7 @@ export function PP() {
       </div>
 
       <motion.div
-        className=" py-2 flex justify-center"
+        className="flex justify-center"
         variants={vari}
         initial="hidden"
         whileInView="visible"
@@ -136,7 +136,7 @@ export function PP() {
           once: true,
         }}
       >
-        <Card className="mt-6 w-auto ml-4 mr-4">
+        <Card className="mt-6 w-3/4">
           <CardBody>
             <Typography variant="h5" color="blue-gray" className="mb-2">
               {item.title}
@@ -145,7 +145,7 @@ export function PP() {
           </CardBody>
         </Card>
       </motion.div>
-      <div className="mr-4 ml-4 py-2">
+      <div className="mr-4 ml-4 py-6">
         <Slidey />
       </div>
     </div>
