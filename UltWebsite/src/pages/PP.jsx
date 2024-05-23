@@ -10,8 +10,10 @@ import {
   CardBody,
   CardFooter,
   Button,
+  Slider,
 } from "@material-tailwind/react";
 import PPNavbar from "./PPNav";
+import Slidey from "./Featured";
 
 const data = [
   {
@@ -39,7 +41,7 @@ const data = [
     imageLink: "../../Project_Pics/chibi.jpg",
     title: "Meme Generator",
     page: "/Meme",
-    videoLink: "",
+    videoLink: "https://youtu.be/3NQXit04PWo",
     des: "With a strong focus on mastering React, I eagerly embraced this opportunity to enhance my expertise in building responsive and user-friendly web applications. This meme generator is the culmination of the skills I have gathered throughout my React journey. Here is a link to the website: https://memegenerator-josh.netlify.app/",
   },
   {
@@ -126,7 +128,7 @@ export function PP() {
       </div>
 
       <motion.div
-        className=" py-4 flex justify-center"
+        className=" py-2 flex justify-center"
         variants={vari}
         initial="hidden"
         whileInView="visible"
@@ -134,7 +136,7 @@ export function PP() {
           once: true,
         }}
       >
-        <Card className="mt-6 w-96">
+        <Card className="mt-6 w-auto ml-4 mr-4">
           <CardBody>
             <Typography variant="h5" color="blue-gray" className="mb-2">
               {item.title}
@@ -143,6 +145,9 @@ export function PP() {
           </CardBody>
         </Card>
       </motion.div>
+      <div className="mr-4 ml-4 py-2">
+        <Slidey />
+      </div>
     </div>
   );
 }

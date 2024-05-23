@@ -287,10 +287,10 @@ export function NavbarDefault(props) {
             <div className="flex-1">
               <Link
                 className="group cursor-pointer"
-                to="home"
+                to="resume"
                 spy={true}
                 smooth={true}
-                offset={-120}
+                offset={-300}
                 duration={500}
               >
                 <Button

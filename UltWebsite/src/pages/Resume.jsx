@@ -20,7 +20,7 @@ const handleDownload = () => {
 export function Resume() {
   return (
     <motion.div>
-      <Card className="w-96 h-100">
+      <Card className="w-96 h-100" id="resume">
         <CardHeader shadow={false} floated={false} className="h-80">
           <img src="../../res.jpg" alt="card-image" className="h-l w-full " />
         </CardHeader>

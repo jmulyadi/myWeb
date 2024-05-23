@@ -27,7 +27,7 @@ import { motion, useInView, useAnimation } from "framer-motion";
           ></motion.div>*/
 const Home = (props) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { triggerOnce: false, amount: "all" });
+  const isInView = useInView(ref, { triggerOnce: false });
 
   const mainControls = useAnimation();
   const slideControls = useAnimation();

@@ -5,7 +5,6 @@ import {
   TimelineIcon,
   Typography,
   TimelineHeader,
-  timeline,
 } from "@material-tailwind/react";
 import {
   BellIcon,
@@ -26,7 +25,6 @@ export function Experience() {
     visible: {
       x: 0,
       transition: { duration: 1 },
-      amount: "all",
     },
     small: {
       scale: 0,
@@ -34,9 +32,9 @@ export function Experience() {
     normal: {
       scale: 1,
       transition: { duration: 1 },
-      amount: "all",
     },
   };
+
   return (
     <>
       <div className="flex justify-center" id="experience">
@@ -48,9 +46,9 @@ export function Experience() {
         </Typography>
       </div>
 
-      <div className="flex justify-center gap-20">
+      <div className="flex flex-col md:flex-row justify-center gap-10">
         <motion.div
-          className="w-[25rem]  ml-4"
+          className="w-full md:w-[25rem] ml-4"
           variants={vari}
           initial="hidden"
           whileInView="visible"
@@ -61,7 +59,6 @@ export function Experience() {
           <Timeline>
             <TimelineItem className="h-80 py-9">
               <TimelineConnector className="!w-[78px]" />
-
               <TimelineHeader className="relative rounded-xl border border-blue-gray-50 bg-white py-3 pl-4 pr-8 shadow-lg shadow-blue-gray-900/5">
                 <TimelineIcon
                   className="p-3 bg-mylightBlue"
@@ -143,8 +140,9 @@ export function Experience() {
             </TimelineItem>
           </Timeline>
         </motion.div>
+        <div className="py-10"></div>
         <motion.div
-          className=""
+          className="w-full md:w-auto"
           variants={vari}
           initial="small"
           whileInView="normal"

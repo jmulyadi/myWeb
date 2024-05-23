@@ -5,14 +5,14 @@ const FooterCard = () => {
   return (
     <div>
       <div className="bg-gray-900 p-6" id="contact">
-        <div className="flex flex-col md:flex-row gap-40 justify-center">
-          <div className="ml-20 flex flex-col mb-4 md:mb-0 md:mr-4">
-            <Typography className="px-12" variant="h4" color="white">
+        <div className="flex flex-col md:flex-row gap-8 md:gap-40 justify-center items-center">
+          <div className="flex flex-col mb-4 md:mb-0 md:mr-4 items-center">
+            <Typography className="px-0 md:px-12" variant="h4" color="white">
               Contact
             </Typography>
             <a href="mailto:jmulyadi1@gmail.com" className="cursor-pointer">
               <Typography
-                className="py-4 hover:text-blue-500 hover:underline"
+                className="py-4 hover:text-blue-500 hover:underline text-center md:text-left"
                 color="white"
               >
                 Email: jmulyadi1@gmail.com
@@ -21,17 +21,17 @@ const FooterCard = () => {
             <a href="https://www.linkedin.com/in/josh-mulyadi/">
               <Typography
                 color="white"
-                className="hover:text-blue-500 hover:underline"
+                className="hover:text-blue-500 hover:underline text-center md:text-left"
               >
                 Linkedin: linkedin.com/in/josh-mulyadi/
               </Typography>
             </a>
           </div>
-          <div className="mr-20">
-            <Typography className="px-16" variant="h3" color="white">
+          <div className="flex flex-col items-center md:items-start">
+            <Typography className="px-0 md:px-16" variant="h3" color="white">
               Socials
             </Typography>
-            <div className="flex space-x-4 py-4">
+            <div className="flex space-x-4 py-4 justify-center md:justify-start">
               <a
                 className="hover:cursor-pointer transform hover:-translate-y-2 transition duration-300"
                 href="https://github.com/"
@@ -100,16 +100,26 @@ const FooterCard = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center bg-black">
-        <Typography color="white" className="font-bold">
+      <div className="flex flex-col md:flex-row justify-center items-center bg-black py-4">
+        <Typography
+          color="white"
+          className="font-bold text-center md:text-left"
+        >
           ©&nbsp;
         </Typography>
-        <Typography color="white"> Made with ♥ by </Typography>
-        <Typography className="font-bold" color="white" id="bottom">
+        <Typography color="white" className="text-center md:text-left">
+          Made with ♥ by
+        </Typography>
+        <Typography
+          className="font-bold text-center md:text-left"
+          color="white"
+          id="bottom"
+        >
           &nbsp;Josh Mulyadi
         </Typography>
       </div>
     </div>
   );
 };
+
 export default FooterCard;

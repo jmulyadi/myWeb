@@ -27,7 +27,7 @@ export function Gallery() {
       imageLink: "../../Project_Pics/chibi.jpg",
       title: "Meme Generator",
       page: "/Meme",
-      videoLink: "",
+      videoLink: "https://youtu.be/3NQXit04PWo",
     },
     {
       imageLink: "../../Project_Pics/Indo_Graph.png",
@@ -95,8 +95,8 @@ export function Gallery() {
                 hidden: { opacity: 0, y: 75 },
               }}
               initial="hidden"
-              viewport={{ amount: "all" }}
-              animate={mainControls}
+              viewport={{ amount: "all", once: true }}
+              whileInView="visible"
               custom={index}
             >
               <Link to={{ pathname: page, state: { videoLink } }}>

@@ -44,7 +44,7 @@ export function Education() {
       >
         Education
       </Typography>
-      <div className="ml-20 mr-20">
+      <div className="px-4 md:px-20">
         <Accordion open={openAcc1}>
           <motion.div
             variants={vari}
@@ -54,15 +54,20 @@ export function Education() {
               once: true,
             }}
           >
-            <AccordionHeader onClick={handleOpenAcc1}>
-              The Ohio State University
-              <Typography variant="h6" className="absolute right-20">
-                GPA: 3.97/4.0
-              </Typography>
-              <BookOpenIcon
-                className="h-10, w-10 text-myblue absolute right-5"
-                variant="gradient"
-              />
+            <AccordionHeader
+              onClick={handleOpenAcc1}
+              className="flex flex-col md:flex-row justify-between items-center"
+            >
+              <div className="flex-1">The Ohio State University</div>
+              <div className="flex items-center mt-2 md:mt-0">
+                <Typography variant="h6" className="mr-2">
+                  GPA: 3.97/4.0
+                </Typography>
+                <BookOpenIcon
+                  className="h-10 w-10 text-myblue"
+                  variant="gradient"
+                />
+              </div>
             </AccordionHeader>
           </motion.div>
           <motion.div
@@ -89,12 +94,17 @@ export function Education() {
               once: true,
             }}
           >
-            <AccordionHeader onClick={handleOpenAcc2}>
-              Olentangy Liberty Highschool
-              <Typography variant="h6" className="absolute right-20">
-                GPA: 4.24/4.0
-              </Typography>
-              <BuildingLibraryIcon className="text-myblue h-10 w-10 absolute right-5" />
+            <AccordionHeader
+              onClick={handleOpenAcc2}
+              className="flex flex-col md:flex-row justify-between items-center"
+            >
+              <div className="flex-1">Olentangy Liberty Highschool</div>
+              <div className="flex items-center mt-2 md:mt-0">
+                <Typography variant="h6" className="mr-2">
+                  GPA: 4.24/4.0
+                </Typography>
+                <BuildingLibraryIcon className="text-myblue h-10 w-10" />
+              </div>
             </AccordionHeader>
           </motion.div>
           <motion.div
@@ -115,4 +125,5 @@ export function Education() {
     </>
   );
 }
+
 export default Education;
